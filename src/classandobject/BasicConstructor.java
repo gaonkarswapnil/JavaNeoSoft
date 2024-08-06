@@ -33,7 +33,7 @@ public class BasicConstructor {
 
 class BasicConstructorMain {
     public static void main(String[] args) {
-        BasicConstructor obj = new BasicConstructor();
+        BasicConstructor obj = new BasicConstructor() ;
         obj.name = "Batman";
         obj.age = 30;
         obj.data();
