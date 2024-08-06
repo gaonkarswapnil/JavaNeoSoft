@@ -1,6 +1,26 @@
 package oops.abstraction;
 
-import java.util.SimpleTimeZone;
+/*
+Create an Abstract Class:
+Define an abstract class SmartDevice with abstract methods turnOn() and turnOff().
+
+Create Interfaces:
+Define an interface Adjustable with methods increaseSetting() and decreaseSetting().
+Define an interface TemperatureControllable with methods setTemperature(double temperature).
+
+Create Smart Devices:
+Create concrete classes SmartLight and SmartThermostat that extend SmartDevice.
+Implement the Adjustable interface in SmartLight and the TemperatureControllable interface in SmartThermostat.
+
+Create a Controller Class:
+Create a class SmartHomeController that manages a list of SmartDevice objects.
+Implement methods to turn all devices on and off, and to adjust settings for devices that support Adjustable or TemperatureControllable.
+
+Demonstration:
+Write a main class to:
+Create instances of SmartLight and SmartThermostat.
+Use SmartHomeController to control the devices and demonstrate their functionalities.
+*/
 
 abstract class SmartDevice{
     abstract void turnOn();
