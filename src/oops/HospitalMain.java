@@ -213,14 +213,26 @@ public class HospitalMain {
         hospital.assignDoctor(patient1,doctor1);
         hospital.assignDoctor(patient2,doctor2);
 
-        System.out.println("Doctor1 Salary: "+doctor1.calculateSalary());
-        System.out.println("Doctor2 Salary: "+doctor2.calculateSalary());
+        displayPersonDetails(doctor1);
+        System.out.println(" Doctor1 Salary: "+doctor1.calculateSalary());
+        displayPersonDetails(doctor2);
+        System.out.println(" Doctor2 Salary: "+doctor2.calculateSalary());
 
-        System.out.println("Staff1 Salary: "+staff1.calculateSalary());
-        System.out.println("Staff2 Salary: "+staff2.calculateSalary());
+        displayPersonDetails(staff1);
+        System.out.println(" Staff1 Salary: "+staff1.calculateSalary());
+        displayPersonDetails(staff2);
+        System.out.println(" Staff2 Salary: "+staff2.calculateSalary());
 
-        System.out.println("Patient1 fees "+patient1.calculateTotalBill()+" Doctor Assign: "+patient1.getDoctorAssigned().getName());
-        System.out.println("Patient2 fees "+patient2.calculateTotalBill()+" Doctor Assign: "+patient2.getDoctorAssigned().getName());
+        displayPersonDetails(patient1);
+        System.out.println(" Patient1 fees "+patient1.calculateTotalBill()+" Doctor Assign: "+patient1.getDoctorAssigned().getName());
+        displayPersonDetails(patient2);
+        System.out.println(" Patient2 fees "+patient2.calculateTotalBill()+" Doctor Assign: "+patient2.getDoctorAssigned().getName());
 
+    }
+
+    public static void displayPersonDetails(Person person){
+        System.out.print("Id: "+person.getId());
+        System.out.print(" Name: "+person.getName());
+        System.out.print(" Age: "+person.getAge());
     }
 }
